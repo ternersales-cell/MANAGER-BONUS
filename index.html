@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red42\green44\blue51;\red247\green249\blue250;\red13\green14\blue17;
+\red219\green63\blue57;\red167\green87\blue5;\red66\green147\blue62;\red143\green144\blue150;\red147\green0\blue147;
+\red50\green94\blue238;\red188\green0\blue52;}
+{\*\expandedcolortbl;;\cssrgb\c21961\c22745\c25882;\cssrgb\c97647\c98039\c98431;\cssrgb\c5882\c6667\c8235;
+\cssrgb\c89412\c33725\c28627;\cssrgb\c71765\c41961\c392;\cssrgb\c31373\c63137\c30980;\cssrgb\c62745\c63137\c65490;\cssrgb\c65098\c14902\c64314;
+\cssrgb\c25098\c47059\c94902;\cssrgb\c79216\c7059\c26275;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+<!DOCTYPE html>\cf4 \
+\cf2 <\cf5 html \cf6 lang\cf2 =\cf7 "uk"\cf2 >\cf4 \
+\cf2 <\cf5 head\cf2 >\cf4 \
+    \cf2 <\cf5 meta \cf6 charset\cf2 =\cf7 "UTF-8"\cf2 >\cf4 \
+    \cf2 <\cf5 meta \cf6 name\cf2 =\cf7 "viewport"\cf5  \cf6 content\cf2 =\cf7 "width=device-width, initial-scale=1.0"\cf2 >\cf4 \
+    \cf2 <\cf5 title\cf2 >\cf4 \uc0\u1050 \u1086 \u1084 \u1073 \u1072 \u1081 \u1085  \u1091 \u1087 \u1088 \u1072 \u1074 \u1083 \u1110 \u1085 \u1085 \u1103  \u1079 \u1072 \u1103 \u1074 \u1082 \u1072 \u1084 \u1080 \cf2 </\cf5 title\cf2 >\cf4 \
+    \cf2 <\cf5 style\cf2 >\cf4 \
+        * \{\
+            box-sizing: border-box;\
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
+        \}\
+        \
+        body \{\
+            margin: 0;\
+            padding: 20px;\
+            background-color: #f5f7fa;\
+            color: #333;\
+        \}\
+        \
+        .container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+            background-color: white;\
+            border-radius: 10px;\
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);\
+            overflow: hidden;\
+        \}\
+        \
+        /* \uc0\u1042 \u1057 \u1058 \u1040 \u1042 \u1058 \u1045  \u1042 \u1045 \u1057 \u1068  CSS \u1047  \u1055 \u1054 \u1055 \u1045 \u1056 \u1045 \u1044 \u1053 \u1068 \u1054 \u1043 \u1054  \u1050 \u1054 \u1044 \u1059  \u1058 \u1059 \u1058  */\
+        \
+    \cf2 </\cf5 style\cf2 >\cf4 \
+\cf2 </\cf5 head\cf2 >\cf4 \
+\cf2 <\cf5 body\cf2 >\cf4 \
+    
+\f1\i \cf8 <!-- \uc0\u1042 \u1057 \u1058 \u1040 \u1042 \u1058 \u1045  \u1042 \u1045 \u1057 \u1068  HTML \u1047  \u1055 \u1054 \u1055 \u1045 \u1056 \u1045 \u1044 \u1053 \u1068 \u1054 \u1043 \u1054  \u1050 \u1054 \u1044 \u1059  \u1058 \u1059 \u1058  -->
+\f0\i0 \cf4 \
+    \
+    \cf2 <\cf5 script\cf2 >\cf4 \
+        
+\f1\i \cf8 // \uc0\u1042 \u1057 \u1058 \u1040 \u1042 \u1058 \u1045  \u1042 \u1045 \u1057 \u1068  JAVASCRIPT \u1047  \u1055 \u1054 \u1055 \u1045 \u1056 \u1045 \u1044 \u1053 \u1068 \u1054 \u1043 \u1054  \u1050 \u1054 \u1044 \u1059  \u1058 \u1059 \u1058 
+\f0\i0 \cf4 \
+        \
+        
+\f1\i \cf8 // \uc0\u1044 \u1086 \u1076 \u1072 \u1090 \u1082 \u1086 \u1074 \u1110  \u1092 \u1091 \u1085 \u1082 \u1094 \u1110 \u1111  \u1076 \u1083 \u1103  \u1079 \u1073 \u1077 \u1088 \u1077 \u1078 \u1077 \u1085 \u1085 \u1103  \u1076 \u1072 \u1085 \u1080 \u1093 
+\f0\i0 \cf4 \
+        \cf9 function\cf4  \cf10 initializeDataStorage\cf2 ()\cf4  \cf2 \{\cf4 \
+            
+\f1\i \cf8 // \uc0\u1040 \u1074 \u1090 \u1086 \u1084 \u1072 \u1090 \u1080 \u1095 \u1085 \u1077  \u1079 \u1073 \u1077 \u1088 \u1077 \u1078 \u1077 \u1085 \u1085 \u1103  \u1082 \u1086 \u1078 \u1085 \u1110  30 \u1089 \u1077 \u1082 \u1091 \u1085 \u1076 
+\f0\i0 \cf4 \
+            \cf10 setInterval\cf2 (\cf9 function\cf2 ()\cf4  \cf2 \{\cf4 \
+                \cf10 saveAllData\cf2 ();\cf4 \
+            \cf2 \},\cf4  \cf6 30000\cf2 );\cf4 \
+            \
+            
+\f1\i \cf8 // \uc0\u1047 \u1073 \u1077 \u1088 \u1077 \u1078 \u1077 \u1085 \u1085 \u1103  \u1087 \u1088 \u1080  \u1079 \u1072 \u1082 \u1088 \u1080 \u1090 \u1090 \u1110  \u1089 \u1090 \u1086 \u1088 \u1110 \u1085 \u1082 \u1080 
+\f0\i0 \cf4 \
+            window\cf2 .\cf10 addEventListener\cf2 (\cf7 'beforeunload'\cf2 ,\cf4  \cf9 function\cf2 ()\cf4  \cf2 \{\cf4 \
+                \cf10 saveAllData\cf2 ();\cf4 \
+            \cf2 \});\cf4 \
+        \cf2 \}\cf4 \
+        \
+        \cf9 function\cf4  \cf10 saveAllData\cf2 ()\cf4  \cf2 \{\cf4 \
+            \cf9 const\cf4  data \cf9 =\cf4  \cf2 \{\cf4 \
+                \cf5 managers\cf9 :\cf4  managers\cf2 ,\cf4 \
+                \cf5 admins\cf9 :\cf4  admins\cf2 ,\cf4 \
+                \cf5 requests\cf9 :\cf4  requests\cf2 ,\cf4 \
+                \cf5 timestamp\cf9 :\cf4  \cf9 new\cf4  \cf6 Date\cf2 ().\cf10 toISOString\cf2 ()\cf4 \
+            \cf2 \};\cf4 \
+            \
+            \cf9 try\cf4  \cf2 \{\cf4 \
+                
+\f1\i \cf8 // \uc0\u1047 \u1073 \u1077 \u1088 \u1110 \u1075 \u1072 \u1108 \u1084 \u1086  \u1074  localStorage
+\f0\i0 \cf4 \
+                localStorage\cf2 .\cf10 setItem\cf2 (\cf7 'combineData'\cf2 ,\cf4  \cf6 JSON\cf2 .\cf10 stringify\cf2 (\cf4 data\cf2 ));\cf4 \
+                console\cf2 .\cf10 log\cf2 (\cf7 '\uc0\u1044 \u1072 \u1085 \u1110  \u1079 \u1073 \u1077 \u1088 \u1077 \u1078 \u1077 \u1085 \u1086  \u1074  localStorage'\cf2 );\cf4 \
+                \
+                
+\f1\i \cf8 // \uc0\u1057 \u1087 \u1088 \u1086 \u1073 \u1091 \u1108 \u1084 \u1086  \u1079 \u1073 \u1077 \u1088 \u1077 \u1075 \u1090 \u1080  \u1074  Google Drive (\u1103 \u1082 \u1097 \u1086  \u1085 \u1072 \u1083 \u1072 \u1096 \u1090 \u1086 \u1074 \u1072 \u1085 \u1086 )
+\f0\i0 \cf4 \
+                \cf10 saveToGoogleDrive\cf2 (\cf4 data\cf2 );\cf4 \
+            \cf2 \}\cf4  \cf9 catch\cf4  \cf2 (\cf4 error\cf2 )\cf4  \cf2 \{\cf4 \
+                console\cf2 .\cf10 error\cf2 (\cf7 '\uc0\u1055 \u1086 \u1084 \u1080 \u1083 \u1082 \u1072  \u1079 \u1073 \u1077 \u1088 \u1077 \u1078 \u1077 \u1085 \u1085 \u1103 :'\cf2 ,\cf4  error\cf2 );\cf4 \
+            \cf2 \}\cf4 \
+        \cf2 \}\cf4 \
+        \
+        
+\f1\i \cf8 // \uc0\u1060 \u1091 \u1085 \u1082 \u1094 \u1110 \u1103  \u1076 \u1083 \u1103  \u1079 \u1073 \u1077 \u1088 \u1077 \u1078 \u1077 \u1085 \u1085 \u1103  \u1074  Google Drive \u1095 \u1077 \u1088 \u1077 \u1079  Google Apps Script
+\f0\i0 \cf4 \
+        \cf9 async\cf4  \cf9 function\cf4  \cf10 saveToGoogleDrive\cf2 (\cf4 data\cf2 )\cf4  \cf2 \{\cf4 \
+            
+\f1\i \cf8 // \uc0\u1062 \u1077  \u1087 \u1086 \u1090 \u1088 \u1077 \u1073 \u1091 \u1108  \u1076 \u1086 \u1076 \u1072 \u1090 \u1082 \u1086 \u1074 \u1086 \u1075 \u1086  \u1085 \u1072 \u1083 \u1072 \u1096 \u1090 \u1091 \u1074 \u1072 \u1085 \u1085 \u1103  Google Apps Script
+\f0\i0 \cf4 \
+            
+\f1\i \cf8 // \uc0\u1055 \u1086 \u1082 \u1080  \u1097 \u1086  \u1087 \u1088 \u1086 \u1089 \u1090 \u1086  \u1079 \u1073 \u1077 \u1088 \u1110 \u1075 \u1072 \u1108 \u1084 \u1086  \u1074  localStorage
+\f0\i0 \cf4 \
+        \cf2 \}\cf4 \
+        \
+        
+\f1\i \cf8 // \uc0\u1047 \u1072 \u1074 \u1072 \u1085 \u1090 \u1072 \u1078 \u1091 \u1108 \u1084 \u1086  \u1076 \u1072 \u1085 \u1110  \u1087 \u1088 \u1080  \u1079 \u1072 \u1087 \u1091 \u1089 \u1082 \u1091 
+\f0\i0 \cf4 \
+        \cf9 function\cf4  \cf10 loadAllData\cf2 ()\cf4  \cf2 \{\cf4 \
+            \cf9 const\cf4  savedData \cf9 =\cf4  localStorage\cf2 .\cf10 getItem\cf2 (\cf7 'combineData'\cf2 );\cf4 \
+            \cf9 if\cf4  \cf2 (\cf4 savedData\cf2 )\cf4  \cf2 \{\cf4 \
+                \cf9 try\cf4  \cf2 \{\cf4 \
+                    \cf9 const\cf4  data \cf9 =\cf4  \cf6 JSON\cf2 .\cf10 parse\cf2 (\cf4 savedData\cf2 );\cf4 \
+                    managers \cf9 =\cf4  data\cf2 .\cf4 managers \cf9 ||\cf4  managers\cf2 ;\cf4 \
+                    admins \cf9 =\cf4  data\cf2 .\cf4 admins \cf9 ||\cf4  admins\cf2 ;\cf4 \
+                    requests \cf9 =\cf4  data\cf2 .\cf4 requests \cf9 ||\cf4  requests\cf2 ;\cf4 \
+                    console\cf2 .\cf10 log\cf2 (\cf7 '\uc0\u1044 \u1072 \u1085 \u1110  \u1079 \u1072 \u1074 \u1072 \u1085 \u1090 \u1072 \u1078 \u1077 \u1085 \u1086  \u1079  localStorage'\cf2 );\cf4 \
+                \cf2 \}\cf4  \cf9 catch\cf4  \cf2 (\cf4 error\cf2 )\cf4  \cf2 \{\cf4 \
+                    console\cf2 .\cf10 error\cf2 (\cf7 '\uc0\u1055 \u1086 \u1084 \u1080 \u1083 \u1082 \u1072  \u1079 \u1072 \u1074 \u1072 \u1085 \u1090 \u1072 \u1078 \u1077 \u1085 \u1085 \u1103  \u1076 \u1072 \u1085 \u1080 \u1093 :'\cf2 ,\cf4  error\cf2 );\cf4 \
+                \cf2 \}\cf4 \
+            \cf2 \}\cf4 \
+        \cf2 \}\cf4 \
+        \
+        
+\f1\i \cf8 // \uc0\u1044 \u1086 \u1076 \u1072 \u1108 \u1084 \u1086  \u1082 \u1085 \u1086 \u1087 \u1082 \u1091  \u1077 \u1082 \u1089 \u1087 \u1086 \u1088 \u1090 \u1091  \u1076 \u1083 \u1103  \u1072 \u1076 \u1084 \u1110 \u1085 \u1110 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088 \u1072 
+\f0\i0 \cf4 \
+        \cf9 function\cf4  \cf10 addExportButton\cf2 ()\cf4  \cf2 \{\cf4 \
+            \cf9 if\cf4  \cf2 (\cf4 currentRole \cf9 ===\cf4  \cf7 'admin'\cf2 )\cf4  \cf2 \{\cf4 \
+                \cf9 const\cf4  exportBtn \cf9 =\cf4  document\cf2 .\cf10 createElement\cf2 (\cf7 'button'\cf2 );\cf4 \
+                exportBtn\cf2 .\cf4 textContent \cf9 =\cf4  \cf7 '\uc0\u1045 \u1082 \u1089 \u1087 \u1086 \u1088 \u1090  \u1076 \u1072 \u1085 \u1080 \u1093 '\cf2 ;\cf4 \
+                exportBtn\cf2 .\cf4 className \cf9 =\cf4  \cf7 'action-btn'\cf2 ;\cf4 \
+                exportBtn\cf2 .\cf4 style\cf2 .\cf4 backgroundColor \cf9 =\cf4  \cf7 '#2a5298'\cf2 ;\cf4 \
+                exportBtn\cf2 .\cf4 style\cf2 .\cf4 color \cf9 =\cf4  \cf7 'white'\cf2 ;\cf4 \
+                exportBtn\cf2 .\cf4 style\cf2 .\cf4 marginLeft \cf9 =\cf4  \cf7 '10px'\cf2 ;\cf4 \
+                exportBtn\cf2 .\cf4 onclick \cf9 =\cf4  exportAllData\cf2 ;\cf4 \
+                \
+                \cf9 const\cf4  header \cf9 =\cf4  document\cf2 .\cf10 querySelector\cf2 (\cf7 'header .user-info'\cf2 );\cf4 \
+                \cf9 if\cf4  \cf2 (\cf4 header\cf2 )\cf4  \cf2 \{\cf4 \
+                    header\cf2 .\cf10 appendChild\cf2 (\cf4 exportBtn\cf2 );\cf4 \
+                \cf2 \}\cf4 \
+            \cf2 \}\cf4 \
+        \cf2 \}\cf4 \
+        \
+        \cf9 function\cf4  \cf10 exportAllData\cf2 ()\cf4  \cf2 \{\cf4 \
+            \cf9 const\cf4  data \cf9 =\cf4  \cf2 \{\cf4 \
+                \cf5 managers\cf9 :\cf4  managers\cf2 ,\cf4 \
+                \cf5 admins\cf9 :\cf4  admins\cf2 ,\cf4 \
+                \cf5 requests\cf9 :\cf4  requests\cf2 ,\cf4 \
+                \cf5 exportDate\cf9 :\cf4  \cf9 new\cf4  \cf6 Date\cf2 ().\cf10 toISOString\cf2 ()\cf4 \
+            \cf2 \};\cf4 \
+            \
+            \cf9 const\cf4  dataStr \cf9 =\cf4  \cf6 JSON\cf2 .\cf10 stringify\cf2 (\cf4 data\cf2 ,\cf4  \cf9 null\cf2 ,\cf4  \cf6 2\cf2 );\cf4 \
+            \cf9 const\cf4  dataBlob \cf9 =\cf4  \cf9 new\cf4  \cf6 Blob\cf2 ([\cf4 dataStr\cf2 ],\cf4  \cf2 \{\cf5 type\cf9 :\cf4  \cf7 'application/json'\cf2 \});\cf4 \
+            \cf9 const\cf4  url \cf9 =\cf4  \cf6 URL\cf2 .\cf10 createObjectURL\cf2 (\cf4 dataBlob\cf2 );\cf4 \
+            \
+            \cf9 const\cf4  link \cf9 =\cf4  document\cf2 .\cf10 createElement\cf2 (\cf7 'a'\cf2 );\cf4 \
+            link\cf2 .\cf4 href \cf9 =\cf4  url\cf2 ;\cf4 \
+            link\cf2 .\cf4 download \cf9 =\cf4  \cf7 `combine_backup_\cf11 $\{\cf9 new\cf4  \cf6 Date\cf2 ().\cf10 toISOString\cf2 ().\cf10 split\cf2 (\cf7 'T'\cf2 )[\cf6 0\cf2 ]\cf11 \}\cf7 .json`\cf2 ;\cf4 \
+            document\cf2 .\cf4 body\cf2 .\cf10 appendChild\cf2 (\cf4 link\cf2 );\cf4 \
+            link\cf2 .\cf10 click\cf2 ();\cf4 \
+            document\cf2 .\cf4 body\cf2 .\cf10 removeChild\cf2 (\cf4 link\cf2 );\cf4 \
+            \cf6 URL\cf2 .\cf10 revokeObjectURL\cf2 (\cf4 url\cf2 );\cf4 \
+            \
+            \cf10 showNotification\cf2 (\cf7 '\uc0\u1044 \u1072 \u1085 \u1110  \u1091 \u1089 \u1087 \u1110 \u1096 \u1085 \u1086  \u1077 \u1082 \u1089 \u1087 \u1086 \u1088 \u1090 \u1086 \u1074 \u1072 \u1085 \u1086 '\cf2 ,\cf4  \cf7 'success'\cf2 );\cf4 \
+        \cf2 \}\cf4 \
+        \
+        
+\f1\i \cf8 // \uc0\u1030 \u1085 \u1110 \u1094 \u1110 \u1072 \u1083 \u1110 \u1079 \u1072 \u1094 \u1110 \u1103  \u1087 \u1088 \u1080  \u1079 \u1072 \u1074 \u1072 \u1085 \u1090 \u1072 \u1078 \u1077 \u1085 \u1085 \u1110 
+\f0\i0 \cf4 \
+        document\cf2 .\cf10 addEventListener\cf2 (\cf7 'DOMContentLoaded'\cf2 ,\cf4  \cf9 function\cf2 ()\cf4  \cf2 \{\cf4 \
+            \cf10 loadAllData\cf2 ();\cf4 \
+            \cf10 initializeDataStorage\cf2 ();\cf4 \
+            \
+            
+\f1\i \cf8 // \uc0\u1030 \u1085 \u1110 \u1094 \u1110 \u1072 \u1083 \u1110 \u1079 \u1091 \u1108 \u1084 \u1086  \u1088 \u1077 \u1096 \u1090 \u1091  \u1089 \u1080 \u1089 \u1090 \u1077 \u1084 \u1080 
+\f0\i0 \cf4 \
+            
+\f1\i \cf8 // ... \uc0\u1074 \u1072 \u1096  \u1110 \u1089 \u1085 \u1091 \u1102 \u1095 \u1080 \u1081  \u1082 \u1086 \u1076  \u1110 \u1085 \u1110 \u1094 \u1110 \u1072 \u1083 \u1110 \u1079 \u1072 \u1094 \u1110 \u1111  ...
+\f0\i0 \cf4 \
+            \
+            
+\f1\i \cf8 // \uc0\u1044 \u1086 \u1076 \u1072 \u1108 \u1084 \u1086  \u1082 \u1085 \u1086 \u1087 \u1082 \u1091  \u1077 \u1082 \u1089 \u1087 \u1086 \u1088 \u1090 \u1091  \u1087 \u1110 \u1089 \u1083 \u1103  \u1074 \u1093 \u1086 \u1076 \u1091  \u1072 \u1076 \u1084 \u1110 \u1085 \u1110 \u1089 \u1090 \u1088 \u1072 \u1090 \u1086 \u1088 \u1072 
+\f0\i0 \cf4 \
+            \cf10 setTimeout\cf2 (\cf4 addExportButton\cf2 ,\cf4  \cf6 1000\cf2 );\cf4 \
+        \cf2 \});\cf4 \
+    \cf2 </\cf5 script\cf2 >\cf4 \
+\cf2 </\cf5 body\cf2 >\cf4 \
+\cf2 </\cf5 html\cf2 >}
